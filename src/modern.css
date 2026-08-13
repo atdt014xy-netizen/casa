@@ -509,8 +509,12 @@ textarea:focus-visible {
   font-size: 0.88rem;
 }
 
+.feature-tag:last-child {
+  border-bottom: 0;
+}
+
 .room-footer {
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 24px;
   padding-top: 10px;
   border-top: 1px solid var(--line);
