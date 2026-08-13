@@ -1,0 +1,163 @@
+.map-section {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, var(--white) 0%, var(--soft-cream) 100%);
+}
+
+.map-section .section-title {
+  margin-bottom: 70px;
+}
+
+.map-section .section-header-image {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  margin: 20px 0 0 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--shadow);
+}
+
+.map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.map-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-hover);
+  height: 400px;
+}
+
+.map-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-image iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.map-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-brown);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  color: var(--deep-brown);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  color: var(--deep-brown);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.info-card .small-text {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li {
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  color: var(--deep-brown);
+  font-size: 0.95rem;
+}
+
+.info-card li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--primary-brown);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    padding: 60px 15px;
+  }
+
+  .map-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .map-image {
+    height: 300px;
+  }
+
+  .location-info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .info-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+}

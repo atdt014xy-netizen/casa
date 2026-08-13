@@ -1,0 +1,77 @@
+.privacy-policy {
+  width: min(100%, var(--content-width));
+  margin: 28px auto 0;
+  color: rgba(252, 250, 246, 0.76);
+  border-top: 1px solid rgba(229, 201, 159, 0.2);
+}
+
+.privacy-policy summary {
+  padding: 18px 0;
+  color: #e5c99f;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.privacy-policy article {
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 24px;
+  border: 1px solid rgba(229, 201, 159, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.14);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+.privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4 {
+  margin: 24px 0 8px;
+  color: #e5c99f;
+}
+
+.privacy-policy h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.privacy-policy h3 {
+  font-size: 0.98rem;
+}
+
+.privacy-policy h4 {
+  font-size: 0.88rem;
+}
+
+.privacy-policy p {
+  margin: 0 0 10px;
+}
+
+.privacy-policy ul,
+.privacy-policy ol {
+  margin: 6px 0 14px;
+  padding-left: 22px;
+}
+
+.privacy-policy li {
+  margin-bottom: 3px;
+}
+
+.privacy-policy strong {
+  color: #f0d7ad;
+}
+
+.privacy-business {
+  padding-top: 18px;
+  border-top: 1px solid rgba(229, 201, 159, 0.2);
+}
+
+@media (max-width: 768px) {
+  .privacy-policy article {
+    max-height: 520px;
+    padding: 18px;
+    font-size: 0.78rem;
+  }
+}
