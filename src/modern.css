@@ -923,12 +923,16 @@ textarea:focus-visible {
   }
   .hero > .hero-content > p.hero-eyebrow { font-size: 0.64rem; }
   .hero h1 {
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: -0.045em;
     white-space: nowrap;
   }
+  .hero-features {
+    font-size: 0.84rem;
+    letter-spacing: -0.04em;
+  }
   .hero .subtitle {
-    font-size: 0.96rem;
+    font-size: 0.88rem;
     line-height: 1.6;
   }
   .mobile-break { display: inline; }
