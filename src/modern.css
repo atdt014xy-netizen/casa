@@ -496,7 +496,7 @@ textarea:focus-visible {
   min-height: 108px;
   flex-direction: column;
   gap: 0;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .feature-tag {
@@ -512,7 +512,7 @@ textarea:focus-visible {
 .room-footer {
   margin-top: auto;
   margin-bottom: 24px;
-  padding-top: 16px;
+  padding-top: 10px;
   border-top: 1px solid var(--line);
 }
 
